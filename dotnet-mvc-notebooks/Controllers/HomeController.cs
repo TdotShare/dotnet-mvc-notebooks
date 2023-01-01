@@ -30,8 +30,10 @@ namespace dotnet_mvc_notebooks.Controllers
             return View();
         }
 
+        [HttpGet("/home/privacy")]
         public IActionResult Privacy()
         {
+
             return View();
         }
 

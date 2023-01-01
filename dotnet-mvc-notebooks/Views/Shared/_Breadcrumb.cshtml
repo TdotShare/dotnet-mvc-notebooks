@@ -1,25 +1,29 @@
-
 @{
     var TitleHeader_data = ViewData["titleheader_data"] as TitleHeader;
 }
 
-<div class="row mb-2">
-    <div class="col-sm-6">
-        <h1>@TitleHeader_data!.Name</h1>
-    </div>
-    <div class="col-sm-6">
-        <ol class="breadcrumb float-sm-right">
-            @foreach (var item in TitleHeader_data.Breadcrumbs)
-            {
-               
-                if(item.Url == ""){
-                    <li class="breadcrumb-item active">@item.Name</li>
-                }
-                else
+
+@if (TitleHeader_data != null)
+{
+    <div class="row mb-2">
+        <div class="col-sm-6">
+            <h1>@TitleHeader_data!.Name </h1>
+        </div>
+        <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+                @foreach (var item in TitleHeader_data.Breadcrumbs)
                 {
-                    <li class="breadcrumb-item"> <a href="@item.Url">@item.Name</a></li>
+                    if (item.Url == "")
+                    {
+                        <li class="breadcrumb-item active">@item.Name</li>
+                    }
+                    else
+                    {
+                        <li class="breadcrumb-item"> <a href="@item.Url">@item.Name</a></li>
+                    }
                 }
-            }
-        </ol>
+            </ol>
+        </div>
     </div>
-</div>
+
+}
