@@ -15,6 +15,10 @@ namespace dotnet_mvc_notebooks.Controllers
 
         public IActionResult Index()
         {
+
+            var url = Request.Path;
+
+  
             var breadcrumb_list = new Breadcrumb[]
             {
                 new Breadcrumb{ Name = "test 1", Url = "#"},
@@ -27,13 +31,14 @@ namespace dotnet_mvc_notebooks.Controllers
                 Breadcrumbs = breadcrumb_list
             }; ;
 
+            ViewData["url_data"] = url;
+
             return View();
         }
 
-        [HttpGet("/home/privacy")]
+        [HttpGet("/home/privacy/test")]
         public IActionResult Privacy()
         {
-
             return View();
         }
 

@@ -49,7 +49,9 @@
             </a>
 
             <!-- Sidebar -->
-            <partial name="_Sidebar" />
+           @* <partial name="_Sidebar" />*@
+           
+            @await Component.InvokeAsync("MenuList")
             <!-- /.sidebar -->
         </aside>
 
