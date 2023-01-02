@@ -13,6 +13,9 @@ namespace dotnet_mvc_notebooks.Controllers
             _logger = logger;
         }
 
+
+        [HttpGet("")]
+        [HttpGet("home")]
         public IActionResult Index()
         {
 
@@ -36,9 +39,16 @@ namespace dotnet_mvc_notebooks.Controllers
             return View();
         }
 
-        [HttpGet("/home/privacy/test")]
+        [HttpGet("home/privacy", Name = "home_privacy_page")]
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        [HttpGet("home/content", Name = "home_content_page")]
+        public IActionResult Content()
+        {
+
             return View();
         }
 
