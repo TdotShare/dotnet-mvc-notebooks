@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Coding\dotnet\dotnet-mvc-notebooks\dotnet-mvc-notebooks
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Coding/dotnet/dotnet-mvc-notebooks/dotnet-mvc-notebooks/Views/Authen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Coding/dotnet/dotnet-mvc-notebooks/dotnet-mvc-notebooks/Views/Home/Content.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

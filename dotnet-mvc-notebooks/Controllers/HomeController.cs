@@ -15,7 +15,7 @@ namespace dotnet_mvc_notebooks.Controllers
 
 
         [HttpGet("")]
-        [HttpGet("home")]
+        [HttpGet("home" , Name = "home")]
         public IActionResult Index()
         {
 
