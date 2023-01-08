@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-mvc-notebooks", "dotnet-mvc-notebooks\dotnet-mvc-notebooks.csproj", "{A3862CF6-84DA-4BC5-8BF8-E6E244BD49B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-mvc-notebooks", "dotnet-mvc-notebooks\dotnet-mvc-notebooks.csproj", "{A3862CF6-84DA-4BC5-8BF8-E6E244BD49B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-mvc-notebooks.test", "dotnet-mvc-notebooks.test\dotnet-mvc-notebooks.test.csproj", "{02837135-5C9E-4292-B94B-404876E2A6F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A3862CF6-84DA-4BC5-8BF8-E6E244BD49B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3862CF6-84DA-4BC5-8BF8-E6E244BD49B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3862CF6-84DA-4BC5-8BF8-E6E244BD49B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02837135-5C9E-4292-B94B-404876E2A6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02837135-5C9E-4292-B94B-404876E2A6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02837135-5C9E-4292-B94B-404876E2A6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02837135-5C9E-4292-B94B-404876E2A6F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
