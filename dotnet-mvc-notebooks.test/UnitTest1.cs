@@ -39,5 +39,19 @@ namespace dotnet_mvc_notebooks.test
             StringAssert.Contains(contentString, title);
 
         }
+
+        [DataTestMethod]
+        [DataRow("/home")]
+        [DataRow("/auth")]
+        public async Task TEST_Page_all(string url)
+        {
+            await using var application = new WebApplicationFactory<Program>();
+            var httpClient = application.CreateDefaultClient();
+
+            var request = await httpClient.GetAsync(url);
+            var resp = await request.Content.ReadAsStringAsync();
+
+            Assert.AreEqual(HttpStatusCode.OK, request.StatusCode);
+        }
     }
 }
