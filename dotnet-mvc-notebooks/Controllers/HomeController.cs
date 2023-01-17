@@ -48,7 +48,6 @@ namespace dotnet_mvc_notebooks.Controllers
         [HttpGet("home/content", Name = "home_content_page")]
         public IActionResult Content()
         {
-
             return View();
         }
 
