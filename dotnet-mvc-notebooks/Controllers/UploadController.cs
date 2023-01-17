@@ -2,7 +2,7 @@
 
 namespace dotnet_mvc_notebooks.Controllers
 {
-    public class UploadController1 : Controller
+    public class UploadController : Controller
     {
         public IActionResult Create()
         {
